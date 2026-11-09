@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ogrody pod klucz – usługi ogrodnicze i nawadnianie, Sochaczew</title>
+<meta name="description" content="Kompleksowe usługi ogrodnicze i pielęgnacyjne, automatyczne systemy nawadniania trawników, zakładanie trawników, odwodnienie instalacji na zimę. Sochaczew, woj. mazowieckie i łódzkie.">
+<link rel="icon" href="https://i.ibb.co/hRwhkBYs/885658975-122159419215074933-1241789745252351928-n.avif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#273a1e;--green:#82bd53;--paper:#f6f8f1;--ink:#1b2915;--mute:#5b6a52;--line:#d9e2cd;--h:'Bricolage Grotesque',Georgia,sans-serif;--b:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.6 var(--b);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--h);line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(30px,4.6vw,46px);margin-bottom:14px}
+section{padding:84px 0}
+header{position:sticky;top:0;z-index:20;background:var(--dark);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 20px var(--h)}
+.brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#fff}
+nav{display:flex;gap:26px;font-weight:500;font-size:15px}
+nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1;color:var(--green)}
+.btn{display:inline-block;background:var(--green);color:var(--dark);font:700 17px var(--h);padding:14px 26px;border-radius:999px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45)}
+.hero{background:var(--dark);color:#fff;padding:96px 0 110px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(44px,8vw,92px);font-weight:800;max-width:11ch}
+.hero p{max-width:46ch;font-size:20px;margin:24px 0 34px;color:#dbe8cf}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.arc{position:absolute;right:-40px;bottom:-10px;width:min(560px,70vw);opacity:.9;pointer-events:none}
+.arc path{fill:none;stroke:var(--green);stroke-width:3;stroke-linecap:round;stroke-dasharray:6 11;animation:flow 2.4s linear infinite}
+.arc path:nth-child(2){opacity:.6;animation-duration:3s}.arc path:nth-child(3){opacity:.35;animation-duration:3.6s}
+@keyframes flow{to{stroke-dashoffset:-34}}
+.region{margin-top:46px;font-size:15px;color:var(--green);font-weight:600}
+.winter{background:var(--green);color:var(--dark)}
+.winter .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.winter p{font-size:19px;max-width:52ch}
+.winter ul{list-style:none;padding:0;background:var(--dark);color:#fff;border-radius:18px;padding:12px 28px}
+.winter li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14);display:flex;gap:12px;align-items:center;font-weight:500}
+.winter li:last-child{border:0}
+.winter li:before{content:"";width:10px;height:10px;border-radius:50%;background:var(--green);flex:none}
+.winter .btn{background:var(--dark);color:#fff;margin-top:22px}
+.services .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;border-top:2px solid var(--dark)}
+.services article{padding:26px 22px 8px 0}
+.services article+article{padding-left:22px;border-left:1px solid var(--line)}
+.services h3{font-size:23px;margin-bottom:10px}
+.services p{color:var(--mute);font-size:16px}
+.work{background:#fff}
+.proj{margin-top:54px}
+.proj h3{font-size:28px}
+.proj p{color:var(--mute);max-width:70ch;margin:8px 0 20px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.gal button{border:0;padding:0;background:var(--line);border-radius:8px;overflow:hidden;aspect-ratio:4/3;cursor:zoom-in}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.gal button:hover img{transform:scale(1.05)}
+.more{margin-top:44px}
+dialog{border:0;background:transparent;max-width:96vw;max-height:94vh;padding:0}
+dialog::backdrop{background:rgba(10,18,7,.88)}
+dialog img{max-width:96vw;max-height:90vh;border-radius:8px;display:block}
+dialog form{position:absolute;top:8px;right:8px}
+dialog button.x{background:var(--green);color:var(--dark);border:0;border-radius:50%;width:40px;height:40px;font:700 20px var(--h);cursor:pointer}
+.contact{background:var(--dark);color:#fff}
+.contact h2{max-width:14ch}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact .big{font:800 clamp(34px,5.5vw,56px) var(--h);color:var(--green);text-decoration:none;display:block;margin:6px 0 22px}
+.contact ul{list-style:none;padding:0}
+.contact li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.contact li span{color:#b7cba6}
+.contact li a{font-weight:600;text-decoration:none}.contact li a:hover{color:var(--green)}
+footer{background:#1c2a15;color:#9db08c;padding:22px 0;font-size:14px}
+@media(max-width:860px){nav{display:none}.winter .grid,.contact .grid{grid-template-columns:1fr}.services .cols{grid-template-columns:1fr 1fr}.services article:nth-child(3){padding-left:0;border-left:0}section{padding:60px 0}}
+@media(max-width:520px){.services .cols{grid-template-columns:1fr}.services article+article{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+@media(prefers-reduced-motion:reduce){.arc path{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="brand" href="#top"><img src="https://i.ibb.co/hRwhkBYs/885658975-122159419215074933-1241789745252351928-n.avif" alt="Logo Ogrody pod klucz"><span>Ogrody pod klucz</span></a>
+  <nav aria-label="Menu"><a href="#zima">Przed zimą</a><a href="#uslugi">Usługi</a><a href="#realizacje">Realizacje</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="btn" href="tel:+48726800077">726 800 077</a>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <svg class="arc" viewBox="0 0 560 300" aria-hidden="true"><path d="M20 290 Q160 20 300 290"/><path d="M120 290 Q270 60 420 290"/><path d="M230 290 Q380 100 540 290"/></svg>
+ <div class="wrap">
+  <h1>Ogród gotowy pod klucz.</h1>
+  <p>Kompleksowe usługi ogrodnicze i pielęgnacyjne oraz automatyczne systemy nawadniania trawników. Zajmiemy się wszystkim, od zaniedbanej działki po równy, zielony trawnik.</p>
+  <div class="cta"><a class="btn" href="#kontakt">Bezpłatna wycena</a><a class="btn ghost" href="#realizacje">Zobacz realizacje</a></div>
+  <p class="region">Sochaczew · województwo mazowieckie i łódzkie</p>
+ </div>
+</div>
+
+<section class="winter" id="zima">
+ <div class="wrap grid">
+  <div>
+   <h2>Zabezpiecz swoją instalację przed zimą!</h2>
+   <p>Jesień to ostatni moment, więc przygotuj ogród na chłodne dni. Profesjonalne odwodnienie i odpowietrzenie instalacji nawadniającej pozwoli uniknąć pękniętych rur, awarii i kosztownych napraw na wiosnę.</p>
+   <a class="btn" href="tel:+48726800077">Zadzwoń i umów termin</a>
+  </div>
+  <ul>
+   <li>Bezpieczne usunięcie wody z systemu</li>
+   <li>Odpowietrzenie przewodów i zraszaczy</li>
+   <li>Kontrola zaworów</li>
+   <li>Kontrola sekcji nawodnienia</li>
+   <li>Sprzęt kompresorowy</li>
+  </ul>
+ </div>
+</section>
+
+<section class="services" id="uslugi">
+ <div class="wrap">
+  <h2>Co robimy</h2>
+  <p style="color:var(--mute);max-width:56ch">Doświadczeni fachowcy, własny sprzęt i jedna ekipa od pierwszego wyceniania do ostatniego grabienia.</p>
+  <div class="cols">
+   <article><h3>Pielęgnacja ogrodu</h3><p>Porządkowanie, cięcie, agrowłóknina, nowe nasadzenia. Z rębakiem na miejscu, a zrąbki wykorzystujemy w rabatach.</p></article>
+   <article><h3>Nowe trawniki</h3><p>Oprysk, niwelacja koparką, rozłożenie ziemi, glebogryzarka separacyjna, kratownica i wyrównanie niwelatorem pod siew.</p></article>
+   <article><h3>Automatyczne nawadnianie</h3><p>Projekt i montaż systemów nawadniania trawników oraz sezonowe odwodnienie i odpowietrzenie instalacji.</p></article>
+   <article><h3>Zaniedbane ogrody</h3><p>Odmienimy Twój ogród z dnia na dzień. Efekt widać od razu, a teren zostaje czysty.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="work" id="realizacje">
+ <div class="wrap">
+  <h2>Realizacje</h2>
+  <div class="proj">
+   <h3>Pielęgnacja i nowe nasadzenia</h3>
+   <p>Pielęgnacja ogrodu, agrowłóknina i nowe nasadzenia roślin. Rębak na miejscu, a zrąbki trafiły do rabat. Jeśli masz mocno zaniedbany ogród, jesień to idealny czas na zmianę.</p>
+   <div class="gal" data-set="a"></div>
+  </div>
+  <div class="proj">
+   <h3>Nowy trawnik 500 m²</h3>
+   <p>Trawnik założony od zera na powierzchni 500 m².</p>
+   <div class="gal" data-set="b"></div>
+  </div>
+  <div class="proj">
+   <h3>Trawnik od podstaw 1100 m²</h3>
+   <p>Oprysk na darni i chwasty, niwelacja terenu koparką, rozłożenie 80 ton nowej i starej ziemi, glebogryzarka separacyjna, kratownica i wyrównanie niwelatorem ręcznym pod siew. Na koniec ułożenie krawężników pod bramą.</p>
+   <div class="gal" data-set="c"></div>
+  </div>
+  <p class="more"><a class="btn" style="background:var(--dark);color:#fff" href="https://www.facebook.com/profile.php?id=61582248013585" target="_blank" rel="noopener">Więcej realizacji na Facebooku</a></p>
+ </div>
+</section>
+
+<section class="contact" id="kontakt">
+ <div class="wrap grid">
+  <div>
+   <h2>Czekamy na Ciebie</h2>
+   <p style="color:#c9dbb9;max-width:40ch">Każda wycena jest bezpłatna i chętnie doradzimy. Zaufaj profesjonalistom.</p>
+   <a class="big" href="tel:+48726800077">726 800 077</a>
+   <a class="btn" href="https://wa.me/48726800077" target="_blank" rel="noopener">Napisz na WhatsApp</a>
+  </div>
+  <ul>
+   <li><span>E-mail</span><a href="mailto:ogrody.pod.klucz@o2.pl">ogrody.pod.klucz@o2.pl</a></li>
+   <li><span>WhatsApp</span><a href="https://wa.me/48726800077" target="_blank" rel="noopener">+48 726 800 077</a></li>
+   <li><span>Facebook</span><a href="https://www.facebook.com/profile.php?id=61582248013585" target="_blank" rel="noopener">Ogrody pod klucz</a></li>
+   <li><span>Obszar działania</span><b>Sochaczew, woj. mazowieckie i łódzkie</b></li>
+  </ul>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">© <span id="y"></span> Ogrody pod klucz · Sochaczew</div></footer>
+
+<dialog id="lb"><form method="dialog"><button class="x" aria-label="Zamknij">×</button></form><img alt=""></dialog>
+
+<script>
+var P='https://i.ibb.co/';
+var S={
+a:['RTTBnfLC/845902689-122156875095074933-6757139980355405641-n.jpg','vCjRpb9X/845747068-122156875137074933-5297795931479835041-n.jpg','5WVXxMdJ/844826576-122156875263074933-3795517448205827153-n.jpg','JwgTnqcy/845681433-122156875305074933-830418694915020996-n.jpg','DD7yzSjc/843520245-122156875347074933-5585900296077601868-n.jpg','v6w0H6gk/843548507-122156875389074933-7714647284128210164-n.jpg','NgsHmzvN/843884031-122156875431074933-1141811175755998403-n.jpg','4nYtqcsx/846087199-122156875473074933-1499101439827982528-n.jpg','pBjJ61r7/843533459-122156875515074933-1512583277624135038-n.jpg','SD55k6ZN/843928916-122156875557074933-2514988235219582509-n.jpg','RphZnPRD/843928924-122156875599074933-2311763190339074358-n.jpg','JWFMKgjV/843606076-122156875641074933-4995223965713728942-n.jpg','8grMc1h4/843509541-122156875683074933-6795468382800388141-n.jpg','8gNLbd7K/846050375-122156875725074933-3797868038751171871-n.jpg'],
+b:['PZSzdwgW/825268419-122155195953074933-2198480419267782973-n.jpg','0ybBmhj5/825268101-122155195827074933-7923069340647848020-n.jpg','bMbRdxHk/825267904-122155195569074933-8447582458034269465-n.jpg','W84VFjF/825267890-122155195395074933-3130962695655340636-n.jpg','TBf4JhsT/827630474-122155195353074933-5414928542220509188-n.jpg','LzwJrwDV/825268225-122155195269074933-9166262977373773868-n.jpg','M5RbPxhV/825267998-122155195227074933-1554994585235076644-n.jpg','cKGMQgPm/825268116-122155195059074933-5423778214808681682-n.jpg'],
+c:['XZLWvJw9/789959596-122152495185074933-360138191546221492-n.jpg','7JZnQKky/790574828-122152495053074933-1655129338166027350-n.jpg','WWfdgTGz/790226582-122152494891074933-4177070805348205922-n.jpg','rG6m9tVm/790003263-122152494339074933-5169396972267889648-n.jpg','HfKY353W/790208861-122152494213074933-940199950962529914-n.jpg','Mx3yWYMG/790970181-122152493931074933-261964322397797231-n.jpg','6c6Y696v/789926590-122152493301074933-2621140086997185197-n.jpg','3mBn8jPc/790208865-122152493055074933-7220255454751830668-n.jpg','KpyVzqjp/789926548-122152491003074933-4517754358801646487-n.jpg','Q74b79M7/792882508-122152490973074933-4755742669665881028-n.jpg']};
+var lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('.gal').forEach(function(g){
+ S[g.dataset.set].forEach(function(p,i){
+  var b=document.createElement('button'),im=new Image();
+  im.src=P+p;im.loading='lazy';im.alt='Realizacja '+(i+1);
+  im.onerror=function(){b.remove()};
+  b.appendChild(im);b.setAttribute('aria-label','Powiększ zdjęcie '+(i+1));
+  b.onclick=function(){lbi.src=P+p;lb.showModal()};
+  g.appendChild(b);
+ });
+});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
